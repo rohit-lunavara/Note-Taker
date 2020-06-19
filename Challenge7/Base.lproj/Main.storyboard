@@ -81,7 +81,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="5fX-Wj-6My" kind="relationship" relationship="rootViewController" destinationCreationSelector="unusedSegue" id="pg9-bI-SRx"/>
+                        <segue destination="5fX-Wj-6My" kind="relationship" relationship="rootViewController" id="pg9-bI-SRx"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tp9-ma-dYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
