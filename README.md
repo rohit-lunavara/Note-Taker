@@ -1,2 +1,4 @@
 # Note-Taker
-A note-taking application similar to Apple's Notes application. Works on macOS 10.15+.
+A note-taking application similar to Apple's Notes application.
+
+Supports iOS (13.0+) devices and macOS (10.15+).
