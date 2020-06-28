@@ -1,7 +1,16 @@
 # Note-Taker
-A note-taking application similar to Apple's Notes application.
 
-Supports iOS (13.0+) devices and macOS (10.15+).
+A note taking application like the default Notes app made using UIKit.
+
+Support for all iOS devices using AutoLayout and macOS (10.15+) using Mac Catalyst.
+
+## Technologies and Frameworks Used
+
+- **UserDefaults** and **Codable** to store custom data locally.
+- **UITableView** to design a master-detail style application.
+- **Key-Value Observing** to handle resizing of note content.
+- Modifying **ViewController lifecycle methods** to customize UI.
+- Adding sharing functionality using **UIActivityViewController**.
 
 # Screenshots
 
@@ -28,3 +37,10 @@ Supports iOS (13.0+) devices and macOS (10.15+).
 
 ## Saved Notes
 ![Saved Notes](https://github.com/rohit-lunavara/Note-Taker/blob/master/Device%20Mockups/Saved-Notes_iphone.png?raw=true)
+
+# Future Scope
+
+- Use **Core Data** to store note data.
+- Allow custom styling using **NSMutableAttributedString**.
+- Allow images as note content.
+
