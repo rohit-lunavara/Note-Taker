@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A82BDB0F249AB4AC00A35C25 /* Challenge7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge7.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82BDB0F249AB4AC00A35C25 /* Note-Taker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note-Taker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82BDB12249AB4AC00A35C25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82BDB14249AB4AC00A35C25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A82BDB16249AB4AC00A35C25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +28,6 @@
 		A82BDB20249AB4AE00A35C25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82BDB26249AB56000A35C25 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A82BDB28249AB56800A35C25 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		A86635EE249D4733007AC281 /* Challenge7.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Challenge7.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +44,7 @@
 		A82BDB06249AB4AC00A35C25 = {
 			isa = PBXGroup;
 			children = (
-				A82BDB11249AB4AC00A35C25 /* Challenge7 */,
+				A82BDB11249AB4AC00A35C25 /* Note-Taker */,
 				A82BDB10249AB4AC00A35C25 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,15 +52,14 @@
 		A82BDB10249AB4AC00A35C25 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A82BDB0F249AB4AC00A35C25 /* Challenge7.app */,
+				A82BDB0F249AB4AC00A35C25 /* Note-Taker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A82BDB11249AB4AC00A35C25 /* Challenge7 */ = {
+		A82BDB11249AB4AC00A35C25 /* Note-Taker */ = {
 			isa = PBXGroup;
 			children = (
-				A86635EE249D4733007AC281 /* Challenge7.entitlements */,
 				A82BDB12249AB4AC00A35C25 /* AppDelegate.swift */,
 				A82BDB14249AB4AC00A35C25 /* SceneDelegate.swift */,
 				A82BDB16249AB4AC00A35C25 /* ViewController.swift */,
@@ -72,15 +70,15 @@
 				A82BDB1D249AB4AE00A35C25 /* LaunchScreen.storyboard */,
 				A82BDB20249AB4AE00A35C25 /* Info.plist */,
 			);
-			path = Challenge7;
+			path = "Note-Taker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A82BDB0E249AB4AC00A35C25 /* Challenge7 */ = {
+		A82BDB0E249AB4AC00A35C25 /* Note-Taker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A82BDB23249AB4AE00A35C25 /* Build configuration list for PBXNativeTarget "Challenge7" */;
+			buildConfigurationList = A82BDB23249AB4AE00A35C25 /* Build configuration list for PBXNativeTarget "Note-Taker" */;
 			buildPhases = (
 				A82BDB0B249AB4AC00A35C25 /* Sources */,
 				A82BDB0C249AB4AC00A35C25 /* Frameworks */,
@@ -90,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = Challenge7;
+			name = "Note-Taker";
 			productName = Challenge7;
-			productReference = A82BDB0F249AB4AC00A35C25 /* Challenge7.app */;
+			productReference = A82BDB0F249AB4AC00A35C25 /* Note-Taker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A82BDB0A249AB4AC00A35C25 /* Build configuration list for PBXProject "Challenge7" */;
+			buildConfigurationList = A82BDB0A249AB4AC00A35C25 /* Build configuration list for PBXProject "Note-Taker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A82BDB0E249AB4AC00A35C25 /* Challenge7 */,
+				A82BDB0E249AB4AC00A35C25 /* Note-Taker */,
 			);
 		};
 /* End PBXProject section */
@@ -294,17 +292,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Challenge7/Challenge7.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37ABPN9Q5X;
-				INFOPLIST_FILE = Challenge7/Info.plist;
+				INFOPLIST_FILE = "Note-Taker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rohitlunavara.Challenge7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitlunavara.Note-Taker";
+				PRODUCT_NAME = "Note-Taker";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,17 +312,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Challenge7/Challenge7.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 37ABPN9Q5X;
-				INFOPLIST_FILE = Challenge7/Info.plist;
+				INFOPLIST_FILE = "Note-Taker/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rohitlunavara.Challenge7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rohitlunavara.Note-Taker";
+				PRODUCT_NAME = "Note-Taker";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A82BDB0A249AB4AC00A35C25 /* Build configuration list for PBXProject "Challenge7" */ = {
+		A82BDB0A249AB4AC00A35C25 /* Build configuration list for PBXProject "Note-Taker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A82BDB21249AB4AE00A35C25 /* Debug */,
@@ -344,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A82BDB23249AB4AE00A35C25 /* Build configuration list for PBXNativeTarget "Challenge7" */ = {
+		A82BDB23249AB4AE00A35C25 /* Build configuration list for PBXNativeTarget "Note-Taker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A82BDB24249AB4AE00A35C25 /* Debug */,

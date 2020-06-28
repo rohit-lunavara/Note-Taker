@@ -29,6 +29,7 @@ class DetailViewController: UIViewController {
         super.viewWillAppear(true)
         
         customizeNavbar()
+        noteContent.becomeFirstResponder()
     }
     
     func customizeNavbar() {
@@ -90,8 +91,11 @@ extension DetailViewController {
             self?.note.title = newTitle
             self?.title = newTitle
             self?.saveNoteChanges()
+            self?.view.endEditing(true)
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { [weak self] (_) in
+            self?.view.endEditing(true)
+        }
         ac.addAction(okAction)
         ac.addAction(cancelAction)
         present(ac, animated: true)
@@ -104,8 +108,16 @@ extension DetailViewController {
     }
     
     @objc func removeNote() {
-        notes.remove(at: noteIndex)
-        goBack(remove: true)
+        let ac = UIAlertController(title: "Delete Note?", message: nil, preferredStyle: .actionSheet)
+        ac.popoverPresentationController?.barButtonItem = navigationController?.toolbar.items?[1]
+        let okAction = UIAlertAction(title: "Okay", style: .destructive) { [weak self] (_) in
+            notes.remove(at: (self?.noteIndex)!)
+            self?.goBack(remove: true)
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        ac.addAction(okAction)
+        ac.addAction(cancelAction)
+        present(ac, animated: true)
     }
     
     @objc func goBack(remove : Bool = false) {
@@ -117,8 +129,6 @@ extension DetailViewController {
 //MARK: - Adjust Note Content View
 
 extension DetailViewController {
-    
-    
     func addKeyboardNotificationObservers() {
         let notificationCenter = NotificationCenter.default
         notificationCenter.addObserver(self, selector: #selector(adjustForKeyboard), name: UIResponder.keyboardWillHideNotification, object: nil)
